@@ -1,0 +1,39 @@
+{
+  "name": "ea-fronts",
+  "version": "1.0.0",
+  "description": "Eastern and Allied's web and mobile apps with monorepo",
+  "main": "index.js",
+  "packageManager": "yarn@1.22.19",
+  "author": "Stephen Vu",
+  "license": "UNLICENSED",
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "apps/*",
+      "libs/*"
+    ],
+    "nohoist": [
+      "**/react-native",
+      "**/react-native/**"
+    ]
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "fs-extra": "^10.1.0",
+    "react": "18.1.0",
+    "react-dom": "18.1.0"
+  },
+  "scripts": {
+    "ls": "yarn workspaces info",
+    "add:lib": "node ./tasks/add-lib.js",
+    "remove:lib": "node ./tasks/remove-lib.js",
+    "web:start": "yarn workspace web start",
+    "web:build": "yarn workspace web build",
+    "mobile:metro": "yarn workspace mobile start",
+    "mobile:android": "yarn workspace mobile android",
+    "mobile:ios": "yarn workspace mobile ios"
+  },
+  "devDependencies": {
+    "react-native-monorepo-tools": "^1.2.0"
+  }
+}

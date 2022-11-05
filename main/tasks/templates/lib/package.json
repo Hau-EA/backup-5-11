@@ -1,0 +1,7 @@
+{
+  "name": "@front-demo/lib-template",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "UNLICENSED",
+  "private": true
+}

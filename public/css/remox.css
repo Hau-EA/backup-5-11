@@ -1,0 +1,6 @@
+.remox {
+  --t-bg-header: #ffffff;
+  --t-c-header-nav-link: var(--ds-c-grey-dark);
+
+  --t-bg-body: #e6e6e6;
+}

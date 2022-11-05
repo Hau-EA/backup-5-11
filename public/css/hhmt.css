@@ -1,0 +1,6 @@
+.hhmt {
+  --t-bg-header: #212121;
+  --t-c-header-nav-link: var(--ds-c-grey-disabled);
+
+  --t-bg-body: #fff;
+}
